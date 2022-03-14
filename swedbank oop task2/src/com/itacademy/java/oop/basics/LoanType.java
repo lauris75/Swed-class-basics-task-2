@@ -10,14 +10,4 @@ public enum LoanType {
     LoanType(String loanType) {
         this.loanType = loanType;
     }
-
-    public static LoanType valueOfCode(String loanType) {
-        for (LoanType e : values()) {
-            if (e.loanType.equals(loanType)) {
-                return e;
-            }
-        }
-        return null;
-    }
-
 }
